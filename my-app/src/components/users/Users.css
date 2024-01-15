@@ -1,0 +1,60 @@
+.card{
+    border-radius: 20px;
+    width: 210px;
+    height: 210px;
+ 
+    background-color: black;
+}
+.card:hover{
+    background-color: #161617;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.card:hover .dropdownicon{
+    background-color: #161617;
+    color: #161617;
+}
+.dropdownicon{
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 20px;
+}
+.title{
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.bio p{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.bio{
+    margin: 10px 10px 10px 20px;
+}
+.showing{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    margin-left: 15px;
+
+}
+
+.sidebar-btn button{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

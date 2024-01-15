@@ -1,0 +1,150 @@
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.superadmintitle{
+  font-size: 21.99px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.header-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+
+/* superadmin css start*/
+.section1 p{
+  font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 12px;
+line-height: 14.63px;
+}
+.section2 p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14.63px;
+}
+
+.section2 a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  line-height: 14.63px;
+}
+.BasicMembership p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21.63px;
+}
+.otherdocuments a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9.75px;
+  font-style: italic;
+  margin-left: 150px;
+  
+}
+/* super admin css end */
+
+
+
+
+/* sidebar css  start here*/
+.Sidebar{
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+   background-color:#161617;
+  color: white;
+   margin: 0;
+}
+.sidebar-ul{
+  margin-bottom: auto;
+}
+.sidebar-ul li a{
+  color:#7D7D7D
+}
+.sidebar-ul li a:hover {
+  color: white;
+
+}
+.logout{
+  color: #7D7D7D;
+}
+.logout:hover{
+  color: white;
+}
+
+.sidebar-ul li a:active{
+  background-color: black;
+  color: white;
+}
+
+
+/* sidebar css end here */
+
+/* otherdocuments in superadmin css start here */
+.card-img{
+  background-color: black;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+}
+.card-text p{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+  width: 120px;
+ text-align: end;
+}
+.biometric p{
+  font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+font-weight: 500;
+text-align: center;
+margin-top: 20px;
+}
+/* otherdocuments in superadmin css ends here */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1366px) {
+  body {
+    display: none; /* Hide the content for screens smaller than 768 pixels */
+    
+  }
+  
+}
