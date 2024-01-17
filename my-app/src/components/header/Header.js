@@ -12,7 +12,7 @@ const Header = ({headerLink1,headerLink2,headerLink3,headerLink4}) => {
     <div className='d-flex'>
       <div className='mt-3 me-3 ps-2  rounded-pill' style={{border:"1px solid white"}} >  
       <img src={search} alt="" />  
-          <input type="text" className='py-2 text-center text-white ms-3 border-dark ' style={{width:"300px" ,borderRadius:"0px 20px 20px 0px",backgroundColor:"#161617",border:"#161617"}} placeholder='Search...' />
+          <input type="text" className='py-2 text-center text-white ms-3 border-dark ' style={{width:"300px" ,borderRadius:"0px 20px 20px 0px",backgroundColor:"#161617",border:"#161617"}} placeholder="search..." input/>
        </div>
       <div class="dropdown mt-2">
         <button class="text-dark  dropdown-toggle mt-3" style={{border:"none",backgroundColor:"#161617"}} type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

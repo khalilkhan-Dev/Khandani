@@ -1,14 +1,16 @@
 import React from 'react'
 
 
-const SuperAdmin = (selectedData) => {
-  const {name,id,profile,Verified,verifiedLogo,contact,email,religion,country,city,study,job,workplace,dob,gender,height}= selectedData;
+const SuperAdmin = ({selectedCardData}) => {
+ 
   return (
     <>
     
     <div className="super-admin pt- text-center">
-        <img src={profile}  alt="" />
-        <p>{Verified} <span><img src={verifiedLogo} alt="" /></span></p>
+    {selectedCardData && (
+              <div>
+        <img src={selectedCardData.image}  alt="" />
+        <p>{selectedCardData.Verified} <span><img src={selectedCardData.verifiedLogo} alt="" /></span></p>
         <div className="row ps-3 mt-3">
           <div className="section1 col-md-6 text-start">
             <p>Name</p>
@@ -26,25 +28,30 @@ const SuperAdmin = (selectedData) => {
             <p>Height</p>
           </div>
           <div className="section2 col-md-6 text-start">
-            <p>{name}</p>
-            <p>{id}</p>
-            <p>{contact}</p>
-            <p>{email}</p>
-            <p>{religion}</p>
-            <p>{country}</p>
-            <p>{city}</p>
-            <p>{study}</p>
-            <p>{job}</p>
-            <p>{workplace}</p>
-            <p>{dob}</p>
-            <p>{gender}</p>
-            <p>{height}</p>
+          
+            <p>{selectedCardData.name}</p>
+            <p>{selectedCardData.id}</p>
+            <p>{selectedCardData.contact}</p>
+            <p>{selectedCardData.email}</p>
+            <p>{selectedCardData.religion}</p>
+            <p>{selectedCardData.country}</p>
+            <p>{selectedCardData.city}</p>
+            <p>{selectedCardData.study}</p>
+            <p>{selectedCardData.job}</p>
+            <p>{selectedCardData.workplace}</p>
+            <p>{selectedCardData.dob}</p>
+            <p>{selectedCardData.gender}</p>
+            <p>{selectedCardData.height}</p>
+           
+           
           </div>
           <div className='otherdocuments'>
           <a href="/UserBio">Other documents</a>
           </div>
         </div>
         <hr className='my-2' />
+        </div>
+            )}
     </div>
 
     </>
