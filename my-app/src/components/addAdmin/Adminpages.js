@@ -12,8 +12,8 @@ const Adminpages = () => {
   
   return (
     <>
-     <div className=" d-flex" >
-    <div  style={{width:"75%",borderRadius:"10px" ,height:"735px",backgroundColor:"#161617"}}>
+     <div className=" d-flex" style={{height:"100%"}} >
+    <div  style={{width:"75%",borderRadius:"10px" ,backgroundColor:"#161617"}}>
 
         <div className="row">
           
@@ -32,7 +32,7 @@ const Adminpages = () => {
     </div>
 
 
-    <div className='mx-auto' style={{width:"24%",borderRadius:"10px",height:"735px",backgroundColor:"#161617"}}>
+    <div className='mx-auto' style={{width:"24%",borderRadius:"10px",backgroundColor:"#161617"}}>
           <div className='d-flex mt-4 justify-content-center'>
             <img src={man} alt="" />
             <h4 className='superadmintitle d-flex align-items-center ms-3'>Super Admin</h4>

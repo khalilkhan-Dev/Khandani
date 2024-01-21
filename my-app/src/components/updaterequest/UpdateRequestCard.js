@@ -1,15 +1,29 @@
 import React from 'react'
-// import profile from '../images/profile.png'
+import profileDropdown from '../images/profileDropdown.png'
 
-const UpdateRequestCard = ({profile}) => {
+const UpdateRequestCard = ({image,onClick,title,display,displaytitle}) => {
    
 
   return (
     <>
-    <div className="col-md-3">
-        <div className=" m-2  card" >
+    <div className="col-md-4 mt-2 " onClick={onClick} style={{cursor:"pointer"}}>
+        <div className="card" >
+        <div className='d-flex justify-content-between'>
+            <p className='title mt-3' style={displaytitle}>{title}</p>
+            <div class="dropdown text-end " style={{display}}>
+        <button class="dropdownicon mt-1 me-2  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src={profileDropdown} alt="" />
+        </button>
+         <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="">Verify</a></li>
+            <li><a class="dropdown-item" href="">Close</a></li>
+            <li><a class="dropdown-item" href="">Reject</a></li>
+
+          </ul>
+     </div>
+          </div>
      <div className="profile-img mt-4 text-center">
-        <img src={profile} width={73} height={73} alt="" />
+        <img src={image} width={65} height={65} className='rounded-circle' alt="" />
      </div>
      <div className="bio">
         <p>Update </p>

@@ -1,14 +1,15 @@
 import React from 'react'
 
-const AdminUpdateRequest = (props) => {
-  const {name,profile,Verified,verifiedLogo,work,university,contact,gender}= props;
+const AdminUpdateRequest = ({selectedCardData,handleclick1,handleclick2,handleclick3}) => {
+ 
 
   return (
     <>
-      
+       {selectedCardData && (
     <div className="super-admin pt- text-center">
-        <img src={profile}  alt="" />
-        <p>{Verified} <span><img src={verifiedLogo} alt="" /></span></p>
+      
+        <img src={selectedCardData.profileimage} width={65} height={65} className='rounded-circle'  alt="" />
+        <p>{selectedCardData.Verified} <span><img src={selectedCardData.verifiedLogo} alt="" /></span></p>
         <div className="row ps-3 mt-3">
           <div className="section1 col-md-6 text-start">
             <p>Name</p>
@@ -19,11 +20,11 @@ const AdminUpdateRequest = (props) => {
             
           </div>
           <div className="section2 col-md-6 text-start">
-            <p>{name}</p>
-            <p>{contact}</p>
-            <p>{gender}</p>
-            <p>{work}</p>
-            <p>{university}</p>
+            <p>{selectedCardData.firstName}</p>
+            <p>{selectedCardData.phone}</p>
+            <p>{selectedCardData.gender}</p>
+            <p>{selectedCardData.workPlace}</p>
+            <p>{selectedCardData.studyPlace}</p>
             
 
           </div>
@@ -34,12 +35,13 @@ const AdminUpdateRequest = (props) => {
         </div>
         <hr />
         <div className='sidebar-btn flex flex-column text-center'>
-            <button className='w-75 mt-4 py-2'>Verify</button>
-            <button className='w-75 mt-4 py-2'>Close</button>
-            <button className='w-75 mt-4  py-2'>Reject</button>
+            <button className='w-75 mt-4 py-2' onClick={handleclick1}>Verify</button>
+            <button className='w-75 mt-4 py-2' onClick={handleclick2}>Close</button>
+            <button className='w-75 mt-4  py-2' onClick={handleclick3}>Reject</button>
 
           </div>
     </div>
+       )}
     </>
   )
 }

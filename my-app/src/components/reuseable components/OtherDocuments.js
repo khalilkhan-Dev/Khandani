@@ -14,7 +14,7 @@ const OtherDocuments = (props) => {
           <h2 className='header-title ms-3'>Users</h2>
           <div className="row" style={{marginLeft:"1px"}} >
             
-        <div className="row mt-4">
+        <div className="row mt-3">
             <div className="col-md-6 d-flex">
                 <div className='card-text'><p>passport:</p></div>
                 <div className="card-img" ><img src={passportimage} alt="" /></div>
@@ -25,7 +25,7 @@ const OtherDocuments = (props) => {
             </div>
         </div>
         
-          <div className="row mt-4">
+          <div className="row mt-3">
           <div className="col-md-6 d-flex">
             <div className='card-text'><p>License:</p></div>
                 <div className="card-img" ><img src={licenseimage} alt="" /></div>
@@ -49,10 +49,7 @@ const OtherDocuments = (props) => {
           </div>
           <img src={line} className='mt-2' width={"100%"} alt="" />
           <SuperAdmin/>
-          <div className='sidebar-btn flex flex-column text-center'>
-            <button  className='w-75 py-2 '>Restrict</button>
-            <button className='w-75 py-2 mt-2 '>Block</button>
-          </div>
+        
     </div>
     </div>
 

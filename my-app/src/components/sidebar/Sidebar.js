@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react'
+import React from 'react'
 import logo from '../images/logo.png'
 import usericon from '../images/usericon.png'
 import usersVerification from '../images/userverification.png'
@@ -10,26 +10,13 @@ import logout from '../images/logout.png'
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
-    const [height, setHeight] = useState(window.innerHeight * 1);
-
-    useEffect(() => {
-        const handleResize = () => {
-          setHeight(window.innerHeight * 1); // Adjust the multiplier as needed
-        };
-    
-        window.addEventListener('resize', handleResize);
-        
-    return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-
+   
 
   return (
     <>
 
  
-<div class="Sidebar d-flex flex-column flex-shrink-0 p-3" style={{height:`${height}px`}}>
+<div class="Sidebar d-flex flex-column flex-shrink-0 p-3" style={{height:'100%'}} >
     <a href="/">
       <img src={logo} width={101} height={83} alt="" />
     </a>

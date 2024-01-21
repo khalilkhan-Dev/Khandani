@@ -1,8 +1,7 @@
 .card{
     border-radius: 20px;
-    width: 210px;
-    height: 210px;
- 
+    width: 230px;
+    height: 230px;
     background-color: black;
 }
 .card:hover{
@@ -25,7 +24,6 @@
     line-height: 12px;
     font-family: 'Montserrat', sans-serif;
     margin-left: 20px;
-    margin-top: 10px;
 
 }
 .bio p{
@@ -38,7 +36,7 @@
 
 }
 .bio{
-    margin: 10px 10px 10px 20px;
+    margin: 10px 10px 10px 10px;
 }
 .showing{
     margin-top: 20px;

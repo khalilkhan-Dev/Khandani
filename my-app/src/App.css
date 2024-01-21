@@ -26,17 +26,21 @@ body{
 
 
 /* superadmin css start*/
+
 .section1 p{
   font-family: 'Montserrat', sans-serif;
 font-weight: 600;
-font-size: 12px;
+font-size: 10px;
 line-height: 14.63px;
+
+
 }
 .section2 p{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 14.63px;
+  overflow-wrap: break-word;
 }
 
 .section2 a{
@@ -61,6 +65,11 @@ line-height: 14.63px;
   font-style: italic;
   margin-left: 150px;
   
+}
+.superadminprofile{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
 }
 /* super admin css end */
 
@@ -133,10 +142,29 @@ margin-top: 20px;
 
 
 
+/* search bar css */
 
+.searchbar{
+  position: relative;
+  margin-top: 15px;
+  margin-right: 5PX;
+}
+.searchbar img{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 8px;
+  
+}
+.searchbar input{
+  text-align: center;
+  border: 1px solid white;
+  width: 350px;
+  padding: 7px;
+  border-radius: 40px;
+  background-color: #161617;
+  color: white;
 
-
-
+}
 
 
 

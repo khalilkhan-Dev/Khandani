@@ -4,7 +4,7 @@ import React from 'react'
 // import Header from '../header/Header'
 import AdminCard from './AdminCard'
 import Header from '../header/Header'
-
+import {Link} from 'react-router-dom'
 
 const AdminData = ({data}) => {
   
@@ -15,8 +15,8 @@ const AdminData = ({data}) => {
     <div className="container">
      
         <div className='text-end me-4' >
-<a href="/AddAdmin">        <button  className='ps-5 pe-5 mb-5 py-2 rounded-pill' style={{backgroundColor:"black",color:"white",border:"none"}}>Add Admin</button>
-</a>     
+<Link to="/createadmin">        <button  className='ps-5 pe-5 mb-5 py-2 rounded-pill' style={{backgroundColor:"black",color:"white",border:"none"}}>Add Admin</button>
+</Link>     
         </div>
           <div className="row" style={{marginLeft:"1px"}}>
           <AdminCard Linkname1={"Delete"}/>
